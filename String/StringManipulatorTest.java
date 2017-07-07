@@ -1,7 +1,16 @@
 public class StringManipulatorTest {
   public static void main(String[] args){
-    StringManipulator iD = new StringManipulator();
-    String trimAndConcat = iD.trimAndConcat("  Hello  ");
-    System.out.println(trimAndConcat.trim());
+    StringManipulator iD = new StringManipulator(); // iD = new StringManipulator()
+    String stra = iD.trimAndConcat("   Hi  ", "   World   "); //stra = new StringManipulator().trimAndConcat("","")
+    System.out.println(stra); // console.log(hello)
+
+    int strb = iD.getIndexOrNull("abcdefghijklmnop", 'k'); // strb = new StringManipulator().getIndexOrNull("", "")
+    System.out.println(strb);
+
+    int strc = iD.getIndexOrNull("Hello", "o");
+    System.out.println(strc);
+
+    String strd = iD.concatSubstring("Hello",1,2,"world");
+    System.out.println(strd); // (eworld)
   }
 }
