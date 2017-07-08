@@ -1,6 +1,7 @@
 public class StringManipulatorTest {
   public static void main(String[] args){
-    StringManipulator iD = new StringManipulator(); // iD = new StringManipulator()
+  // Set the class
+    StringManipulator iD = new StringManipulator();
     String stra = iD.trimAndConcat("   Hi  ", "   World   "); //stra = new StringManipulator().trimAndConcat("","")
     System.out.println(stra); // console.log(hello)
 
